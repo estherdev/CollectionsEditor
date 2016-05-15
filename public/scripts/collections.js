@@ -69,6 +69,48 @@ var CollectionGroupList = React.createClass({
 	</main>
 </div>
 
+<table className="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+  <thead>
+    <tr>
+      <th>Quiz ID</th>
+      <th>Sequence</th>
+      <th className="mdl-data-table__cell--non-numeric">Name</th>
+      <th>Option</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1234</td>
+      <td>1</td>
+      <td className="mdl-data-table__cell--non-numeric">Algebra Quiz</td>
+      <td>
+        <button className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        Edit
+        </button>
+      </td>
+    </tr>
+    <tr>
+       <td>1234</td>
+      <td>2</td>
+      <td className="mdl-data-table__cell--non-numeric">Trig Quiz</td>
+      <td>
+        <button className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        Edit
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>1234</td>
+      <td>3</td>
+      <td className="mdl-data-table__cell--non-numeric">Numbers Quiz</td>
+      <td>
+        <button className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        Edit
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
        </div>
 
