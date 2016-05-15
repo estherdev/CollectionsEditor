@@ -15,8 +15,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.js"></script>
   </head>
-  <body>      
-    <div id="content"></div>
+  <body>
+    <!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+<div class="mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--scroll">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Collection Editor</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">My Classes</a>
+        <a class="mdl-navigation__link" href="">Questions</a>
+        <a class="mdl-navigation__link" href="">Insights</a>
+        <a class="mdl-navigation__link" href="">Feedback</a>
+        <a class="mdl-navigation__link" href="">Help</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">My Classes</a>
+        <a class="mdl-navigation__link" href="">Questions</a>
+        <a class="mdl-navigation__link" href="">Insights</a>
+        <a class="mdl-navigation__link" href="">Feedback</a>
+        <a class="mdl-navigation__link" href="">Help</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content"><div id="content"></div></div>
+  </main>
+</div>      
+   
     <script type="text/babel" src="scripts/collections.js"></script>
   </body>
 </html>

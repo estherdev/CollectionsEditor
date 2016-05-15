@@ -2,7 +2,7 @@ var CollectionBox = React.createClass({
   render: function() {
     return (
       <div>
-        <h1>A Collection</h1>
+        
       </div>
     );
   }
