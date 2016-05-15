@@ -2,7 +2,7 @@ var CollectionBox = React.createClass({
   render: function() {
     return (
       <div>
-        <CollectionGroupList />
+        <CollectionGroupList data={this.props.data} />
       </div>
     );
   }
@@ -81,20 +81,34 @@ var CollectionGroup = React.createClass({
 	</main>
 </div>
         
-      </div>
-      
-      
-      
-      
-      
-      
+      </div>      
     );  
   }
 });
 
+var data = [
+      {
+        id: 1,
+        name: "First Collection",
+        slug: "Petra Hunt",
+        description: "Hey there!",
+    },
+        {
+        id: 2,
+        name: "Second Collection",
+        slug: "Peter Hunt",
+        description: "Hello!",
+    },
+    {
+        id: 3,
+        name: "Third Collection",
+        slug: "Padre Hunt",
+        description: "Hi!",
 
+    }
+];
 
 ReactDOM.render(
-  <CollectionBox />,
+  <CollectionBox data={data} />,
   document.getElementById('content')
 );
